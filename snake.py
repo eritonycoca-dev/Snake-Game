@@ -43,7 +43,7 @@ class Snake:
             "LEFT": "RIGHT", 
             "RIGHT": "LEFT" 
         }
-        if new_direction != opposite[self.direction]: 
+        if new_direction != opposite.get(self.direction, None): 
             self.direction = new_direction
 
     def check_self_collision(self):
@@ -57,7 +57,14 @@ class Snake:
             pygame.draw.rect(surface, color,
                              (segment[0], segment[1], BLOCK_SIZE, BLOCK_SIZE)) 
     
+    # borde en la cabeza para distinguirla
+        head=self.body[0]
+        pygame.draw.rect(surface, (0, 220, 0), (head[0], head[1], BLOCK_SIZE, BLOCK_SIZE), 2)
+
+print("Disponible para importar", dir())
+    
     
     def grow_snake(self):
         self.grow = True 
          
+
