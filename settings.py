@@ -9,10 +9,11 @@ BLOCK_SIZE = 20
 FPS = 10 
 
 #Velocidad de la serpiente 
-Initial_speed = 8
-Speed_Increment= 1
-Level_Up_Food= 3
+Initial_speed = 10
+Speed_Increment= 2
+Level_Up_Food= 5
 
+#Cantidad inicial de obstáculos
 OBSTACLE_COUNT=10 
 
 # Colores 
@@ -21,6 +22,6 @@ GREEN = (34, 139, 34)
 DARK_GREEN = (0, 100, 0)
 RED = (200, 0, 0)
 BLACK = (0, 0, 0)
-GRAY= (0, 0, 0)
+BROWN= (0, 0, 0)
 
 
